@@ -17,4 +17,14 @@ class MaintenanceMonitorApplicationTests {
         Assertions.assertEquals("", messageText);
     }
 
+    @Test
+    void updateMessageTest(){
+        //arrange
+        MaintenanceMonitor maint = new MaintenanceMonitor();
+        //act
+        maint.updateMessage("new");
+        //assert
+        Assertions.assertEquals("new", maint.getMessage());
+    }
+
 }
